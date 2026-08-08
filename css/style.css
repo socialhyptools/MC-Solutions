@@ -1344,6 +1344,26 @@ section { padding: var(--section-py) 0; }
   .hero-actions { flex-direction:column; }
 }
 
+/* ============ LOGO IMAGE ============ */
+.nav-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-logo-img {
+  height: 68px;
+  width: auto;
+  display: block;
+  background: white;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-bottom: 2px;
+}
+
 /* ============ HERO — LEFT SPLIT LAYOUT ============ */
 .hero-inner {
   display: grid;
