@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>MC Solutions — Multi-Industry Services, Ras Al Khaimah, UAE</title>
+  <meta name="description" content="MC Solutions is a trusted multi-industry services partner in the UAE delivering premium home solutions, construction materials, interior décor, and maintenance services."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div id="scroll-progress"></div>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 3C13 3 5 9.5 5 15.5C5 19.6 8.7 23 13 23C17.3 23 21 19.6 21 15.5C21 9.5 13 3 13 3Z" fill="white" fill-opacity="0.95"/>
+          <path d="M9 16C9 16 11 18 13 18C15 18 17 16 17 16" stroke="#009688" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="nav-wordmark">
+        <span class="nav-name">MC Solutions</span>
+        <span class="nav-tagline">Ras Al Khaimah, UAE</span>
+      </div>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html"    class="nav-link active">Home</a>
+      <a href="about.html"    class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html"  class="nav-link">Contact</a>
+    </div>
+
+    <a href="contact.html" class="nav-cta">Get in Touch</a>
+
+    <button class="nav-burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav">
+  <a href="index.html"    class="nav-link">Home</a>
+  <a href="about.html"    class="nav-link">About</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="contact.html"  class="nav-link">Contact</a>
+  <a href="contact.html"  class="nav-cta btn btn-primary">Get in Touch</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+  <div class="hero-glow hero-glow-3"></div>
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- Geometric floating shapes -->
+  <div class="geo-shape geo-1">
+    <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="140,4 272,72 272,208 140,276 8,208 8,72" stroke="#00968888" stroke-width="1.5" fill="none"/>
+      <polygon points="140,30 248,87 248,193 140,250 32,193 32,87" stroke="#00968844" stroke-width="1"/>
+      <polygon points="140,60 220,103 220,177 140,220 60,177 60,103" stroke="#00968833" stroke-width="0.8"/>
+      <circle cx="140" cy="140" r="20" stroke="#C8973A44" stroke-width="1"/>
+    </svg>
+  </div>
+  <div class="geo-shape geo-2">
+    <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="10" width="140" height="140" rx="4" stroke="#C8973A66" stroke-width="1.5" transform="rotate(45 80 80)"/>
+      <rect x="28" y="28" width="104" height="104" rx="4" stroke="#C8973A33" stroke-width="1" transform="rotate(45 80 80)"/>
+    </svg>
+  </div>
+  <div class="geo-shape geo-3">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" stroke="#00968888" stroke-width="1.5"/>
+      <polygon points="50,20 80,35 80,65 50,80 20,65 20,35" stroke="#00968844" stroke-width="1"/>
+    </svg>
+  </div>
+  <div class="geo-shape geo-4">
+    <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="30" cy="30" r="26" stroke="#C8973A" stroke-width="1.5"/>
+      <circle cx="30" cy="30" r="16" stroke="#C8973A" stroke-width="0.8"/>
+      <circle cx="30" cy="30" r="6"  stroke="#C8973A" stroke-width="0.5"/>
+    </svg>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      Your Trusted UAE Partner Since 2019
+    </div>
+
+    <h1 class="hero-title">
+      Dubai's Premier<br/>
+      <span class="hl">Multi-Industry</span><br/>
+      Trading &amp; <span class="gld">Services</span> Hub
+    </h1>
+
+    <p class="hero-sub">
+      MC Solutions delivers world-class solutions across home décor, construction materials, interior design, and comprehensive maintenance services — all under one trusted roof in the UAE.
+    </p>
+
+    <div class="hero-actions">
+      <a href="services.html" class="btn btn-primary">
+        Explore Services
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="contact.html" class="btn btn-ghost">
+        Contact Us
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num"><span data-count="5">0</span><sup>+</sup></div>
+        <div class="hero-stat-label">Years in UAE</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num"><span data-count="12">0</span><sup>+</sup></div>
+        <div class="hero-stat-label">Service Lines</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num"><span data-count="500">0</span><sup>+</sup></div>
+        <div class="hero-stat-label">Projects Delivered</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num"><span data-count="100">0</span><sup>%</sup></div>
+        <div class="hero-stat-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-text">scroll</span>
+  </div>
+</section>
+
+<!-- ===== SERVICES PREVIEW ===== -->
+<section class="services-sec">
+  <div class="container">
+    <div class="services-top">
+      <div>
+        <div class="tag reveal">What We Offer</div>
+        <h2 class="section-heading reveal">Our <em>Core Services</em><br/>Across Every Industry</h2>
+      </div>
+      <div class="reveal">
+        <p class="section-body" style="margin-top:0;max-width:420px;">From interior décor to building materials and home maintenance — we deliver premium quality in everything we do.</p>
+        <a href="services.html" class="btn btn-outline" style="margin-top:20px">View All 12+ Services
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Interior Décor -->
+      <div class="svc-card reveal d1">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path d="M9 22V12h6v10"/><rect x="6" y="5" width="3" height="3" rx="0.5"/></svg>
+        </div>
+        <h3 class="svc-title">Interior Décor Solutions</h3>
+        <p class="svc-desc">Custom curtains, premium carpets, artistic wallpaper, and precision blinds transforming every interior into a statement space.</p>
+        <div class="svc-arrow">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- Building Materials -->
+      <div class="svc-card reveal d2">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="14" width="8" height="7" rx="1"/><rect x="14" y="14" width="8" height="7" rx="1"/><rect x="6" y="7" width="12" height="7" rx="1"/><rect x="9" y="2" width="6" height="5" rx="1"/></svg>
+        </div>
+        <h3 class="svc-title">Building Materials Supply</h3>
+        <p class="svc-desc">Trusted Emirates supplier offering a broad range of construction materials that meet the highest infrastructure demands.</p>
+        <div class="svc-arrow">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- Home Maintenance -->
+      <div class="svc-card reveal d3">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 class="svc-title">Home Maintenance</h3>
+        <p class="svc-desc">Comprehensive plumbing, electrical, AC duct cleaning, and general repairs by trained professionals keeping homes in peak condition.</p>
+        <div class="svc-arrow">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- Painting -->
+      <div class="svc-card reveal d4">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z"/><path d="M12 11v4"/><path d="M8 19a4 4 0 008 0c0-2-2-4-4-7-2 3-4 5-4 7z"/></svg>
+        </div>
+        <h3 class="svc-title">Painting Services</h3>
+        <p class="svc-desc">Professional interior and exterior painting using top-quality paints and precise techniques for smooth, vibrant, and lasting finishes.</p>
+        <div class="svc-arrow">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- Artificial Grass -->
+      <div class="svc-card reveal d5">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22V10"/><path d="M12 10C12 10 8 6 5 3c0 5 3 8 7 7"/><path d="M12 10C12 10 16 6 19 3c0 5-3 8-7 7"/><path d="M6 22V14"/><path d="M6 14C6 14 3 11 2 8c0 4 2 6 4 6"/><path d="M18 22V14"/><path d="M18 14C18 14 21 11 22 8c0 4-2 6-4 6"/><line x1="2" y1="22" x2="22" y2="22"/></svg>
+        </div>
+        <h3 class="svc-title">Artificial Grass</h3>
+        <p class="svc-desc">Create lush green spaces without maintenance — perfect for gardens, balconies, and play areas with expert installation included.</p>
+        <div class="svc-arrow">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- Stationery Supplies -->
+      <div class="svc-card reveal d6">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <h3 class="svc-title">Stationery Supplies</h3>
+        <p class="svc-desc">Wide-range stationery supply for homes, schools, and offices — from paper products to writing tools, delivered reliably across the UAE.</p>
+        <div class="svc-arrow">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats-sec">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-block reveal d1">
+        <div class="stat-num"><span data-count="5">0</span><span>+</span></div>
+        <div class="stat-lbl">Years of Excellence in UAE</div>
+      </div>
+      <div class="stat-block stat-gold reveal d2">
+        <div class="stat-num"><span data-count="12">0</span><span style="color:var(--gold-light)">+</span></div>
+        <div class="stat-lbl">Specialized Service Lines</div>
+      </div>
+      <div class="stat-block reveal d3">
+        <div class="stat-num"><span data-count="500">0</span><span>+</span></div>
+        <div class="stat-lbl">Successful Projects</div>
+      </div>
+      <div class="stat-block stat-gold reveal d4">
+        <div class="stat-num"><span data-count="100">0</span><span style="color:var(--gold-light)">%</span></div>
+        <div class="stat-lbl">Client Satisfaction Rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="whyus-sec">
+  <div class="container">
+    <div class="whyus-inner">
+      <!-- Visual side -->
+      <div class="whyus-graphic reveal-l">
+        <div class="wg-card wg-main">
+          <h3>Dubai's Complete Service Partner</h3>
+          <p>From construction materials to curtains, painting to AC maintenance — we do it all with unmatched quality.</p>
+          <div class="wg-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            ISO-Compliant Services
+          </div>
+        </div>
+        <div class="wg-card wg-float-a">
+          <div class="wg-num">500+</div>
+          <div class="wg-lbl">Happy Clients in UAE</div>
+          <div class="wg-icon-row">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></span>
+          </div>
+        </div>
+        <div class="wg-card wg-float-b">
+          <div class="wg-num">RAK</div>
+          <div class="wg-lbl">Compass Building HQ</div>
+        </div>
+      </div>
+
+      <!-- Text side -->
+      <div class="whyus-right">
+        <div class="tag reveal">Why MC Solutions</div>
+        <h2 class="section-heading reveal">Why Businesses<br/><em>Trust Us</em> in Dubai</h2>
+        <p class="section-body reveal">We combine multi-sector expertise with a customer-first philosophy, delivering results that exceed expectations — every single time.</p>
+
+        <div class="whyus-reasons">
+          <div class="reason reveal d1">
+            <div class="reason-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg>
+            </div>
+            <div>
+              <h4>Rapid Response &amp; Timely Delivery</h4>
+              <p>We understand the value of time in the UAE business landscape. Our teams are dispatch-ready to ensure on-schedule project completion.</p>
+            </div>
+          </div>
+          <div class="reason reveal d2">
+            <div class="reason-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4>Uncompromising Quality Standards</h4>
+              <p>Every product supplied and service delivered meets strict quality benchmarks. We partner only with certified suppliers and trained technicians.</p>
+            </div>
+          </div>
+          <div class="reason reveal d3">
+            <div class="reason-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <h4>Customer-First Approach</h4>
+              <p>Every interaction is tailored to the client's specific needs. From first consultation to after-service support — your satisfaction drives us.</p>
+            </div>
+          </div>
+          <div class="reason reveal d4">
+            <div class="reason-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <h4>Cross-Industry Expertise</h4>
+              <p>Operating across 12+ service lines means we bring integrated insights and solutions that single-specialty companies simply cannot match.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="cta-band">
+  <div class="container">
+    <h2 class="reveal">Ready to Transform Your<br/><span>Space or Business?</span></h2>
+    <p class="reveal">Connect with our team today and discover how MC Solutions can serve your needs across the UAE.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-gold reveal d1">
+        Get a Free Consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:+971585945293" class="btn btn-ghost reveal d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.22 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.5a16 16 0 006.59 6.59l1.59-1.59a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        Call +971 58 594 5293
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg viewBox="0 0 26 26" fill="none"><path d="M13 3C13 3 5 9.5 5 15.5C5 19.6 8.7 23 13 23C17.3 23 21 19.6 21 15.5C21 9.5 13 3 13 3Z" fill="white" fill-opacity="0.9"/><path d="M9 16C9 16 11 18 13 18C15 18 17 16 17 16" stroke="#009688" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="footer-logo-name">MC Solutions</div>
+            <div class="footer-logo-sub">Ras Al Khaimah, UAE</div>
+          </div>
+        </div>
+        <p>Your trusted multi-industry trading and services partner in the UAE, delivering quality, creativity, and reliability across every sector we serve.</p>
+        <div class="footer-socials">
+          <a href="#" class="foot-social" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="foot-social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="foot-social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/971585945293" class="foot-social" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="foot-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <div class="foot-links">
+          <a href="services.html">Interior Décor</a>
+          <a href="services.html">Building Materials</a>
+          <a href="services.html">Home Maintenance</a>
+          <a href="services.html">Painting Services</a>
+          <a href="services.html">Stationery Supplies</a>
+          <a href="services.html">View All</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="foot-contact-items">
+          <div class="foot-contact-item">
+            <div class="fci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.22 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.5a16 16 0 006.59 6.59l1.59-1.59a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div><div class="fci-label">Phone</div><div class="fci-val">+971 58 594 5293</div></div>
+          </div>
+          <div class="foot-contact-item">
+            <div class="fci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="fci-label">Email</div><div class="fci-val">Info@mcsolutionsmena.ae</div></div>
+          </div>
+          <div class="foot-contact-item">
+            <div class="fci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="fci-label">Address</div><div class="fci-val">FDBC3598 Compass Building<br/>Al Shohada Road, AL Hamra Industrial Zone-FZ<br/>Ras Al Khaimah, UAE</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 <span>MC Solutions</span>. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
