@@ -1,5 +1,5 @@
 /* =========================================================
-   Aqua Verde Global LLC — Main JavaScript
+   MC Solutions — Main JavaScript
    ========================================================= */
 
 'use strict';
@@ -182,6 +182,37 @@ function initSmoothScroll() {
   });
 }
 
+/* ---- Popup Quote Form ---- */
+function initPopup() {
+  const overlay  = document.getElementById('quotePopup');
+  const closeBtn = document.getElementById('popupClose');
+  if (!overlay || !closeBtn) return;
+
+  if (!sessionStorage.getItem('popupDismissed')) {
+    setTimeout(() => overlay.classList.add('active'), 2000);
+  }
+
+  function closePopup() {
+    overlay.classList.remove('active');
+    sessionStorage.setItem('popupDismissed', '1');
+  }
+
+  closeBtn.addEventListener('click', closePopup);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closePopup(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
+
+  const form = document.getElementById('popupForm');
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = form.querySelector('.form-sub');
+      btn.textContent = "Thank you! We'll reach out soon.";
+      btn.style.background = 'linear-gradient(135deg,#009688,#00796B)';
+      setTimeout(closePopup, 2400);
+    });
+  }
+}
+
 /* ---- Init All ---- */
 document.addEventListener('DOMContentLoaded', () => {
   initScrollProgress();
@@ -193,4 +224,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initTilt();
   initContactForm();
   initSmoothScroll();
+  initPopup();
 });
