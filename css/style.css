@@ -1348,7 +1348,7 @@ section { padding: var(--section-py) 0; }
 
 /* ============ LOGO IMAGE ============ */
 .nav-logo-img {
-  height: 70px;
+  height: 100px;
   width: auto;
   display: block;
   background: white;
