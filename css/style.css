@@ -1348,9 +1348,12 @@ section { padding: var(--section-py) 0; }
 
 /* ============ LOGO IMAGE ============ */
 .nav-logo-img {
-  height: 48px;
+  height: 70px;
   width: auto;
   display: block;
+  background: white;
+  border-radius: 10px;
+  padding: 6px 14px;
 }
 .footer-logo {
   display: block;
