@@ -871,7 +871,7 @@ section { padding: var(--section-py) 0; }
 }
 .footer-brand p {
   font-size:0.9rem;
-  color:rgba(255,255,255,0.5);
+  color:rgba(255,255,255,0.72);
   line-height:1.75;
   margin:16px 0 24px;
   max-width:280px;
@@ -927,7 +927,7 @@ section { padding: var(--section-py) 0; }
 }
 .fci-icon svg { width:14px; height:14px; stroke:var(--primary-light); }
 .fci-label {
-  font-size:0.72rem; font-weight:700; color:rgba(255,255,255,0.3);
+  font-size:0.72rem; font-weight:700; color:rgba(255,255,255,0.6);
   letter-spacing:0.08em; text-transform:uppercase;
 }
 .fci-val {
