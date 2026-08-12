@@ -81,15 +81,15 @@ input, textarea, select { font-family:var(--font); }
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
-  padding: 24px 0;
-  transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
-}
-.nav.scrolled {
+  padding: 14px 0;
   background: rgba(255,255,255,0.97);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  padding: 14px 0;
   box-shadow: 0 4px 40px rgba(10,22,40,0.08);
+  transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+}
+.nav.scrolled {
+  padding: 14px 0;
 }
 .nav-inner {
   max-width: var(--container);
@@ -122,8 +122,7 @@ input, textarea, select { font-family:var(--font); }
   letter-spacing: -0.02em;
   transition: color var(--transition);
 }
-.nav:not(.scrolled) .nav-name { color: white; }
-.nav.scrolled .nav-name { color: var(--dark); }
+.nav-name { color: var(--dark); }
 .nav-tagline {
   font-size: 0.65rem;
   font-weight: 600;
@@ -131,7 +130,7 @@ input, textarea, select { font-family:var(--font); }
   text-transform: uppercase;
   color: var(--primary-light);
 }
-.nav:not(.scrolled) .nav-tagline { color: rgba(255,255,255,0.6); }
+.nav-tagline { color: var(--primary-light); }
 
 .nav-links {
   display: flex;
@@ -145,8 +144,7 @@ input, textarea, select { font-family:var(--font); }
   padding-bottom: 3px;
   transition: color var(--transition);
 }
-.nav:not(.scrolled) .nav-link { color: rgba(255,255,255,0.82); }
-.nav.scrolled .nav-link { color: var(--text-muted); }
+.nav-link { color: var(--text-muted); }
 .nav-link::after {
   content: '';
   position: absolute;
@@ -158,10 +156,8 @@ input, textarea, select { font-family:var(--font); }
 }
 .nav-link:hover::after,
 .nav-link.active::after { width: 100%; }
-.nav.scrolled .nav-link:hover,
-.nav.scrolled .nav-link.active { color: var(--primary); }
-.nav:not(.scrolled) .nav-link:hover { color: white; }
-.nav:not(.scrolled) .nav-link.active { color: var(--gold-light); }
+.nav-link:hover,
+.nav-link.active { color: var(--primary); }
 
 .nav-cta {
   padding: 10px 26px;
@@ -195,8 +191,7 @@ input, textarea, select { font-family:var(--font); }
   border-radius: 2px;
   transition: all var(--transition);
 }
-.nav:not(.scrolled) .nav-burger span { background: white; }
-.nav.scrolled .nav-burger span { background: var(--dark); }
+.nav-burger span { background: var(--dark); }
 .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
 .nav-burger.open span:nth-child(2) { opacity:0; transform: scaleX(0); }
 .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
