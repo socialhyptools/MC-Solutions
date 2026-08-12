@@ -214,16 +214,26 @@ function initPopup() {
 }
 
 /* ---- Enquiry Buttons on Service Cards ---- */
+function openPopup() {
+  const popup = document.getElementById('quotePopup');
+  if (popup) popup.classList.add('active');
+}
+
 function initEnquiryButtons() {
+  // Services page cards
   document.querySelectorAll('.sf-body').forEach(body => {
     const btn = document.createElement('button');
     btn.className = 'sf-enquiry-btn';
     btn.textContent = 'Enquire Now';
-    btn.addEventListener('click', () => {
-      const popup = document.getElementById('quotePopup');
-      if (popup) popup.classList.add('active');
-    });
+    btn.addEventListener('click', openPopup);
     body.appendChild(btn);
+  });
+
+  // Home page cards — replace "Learn More" arrows with enquiry buttons
+  document.querySelectorAll('.svc-arrow').forEach(arrow => {
+    arrow.innerHTML = 'Enquire Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+    arrow.style.cssText = 'opacity:1;transform:none;cursor:pointer;';
+    arrow.addEventListener('click', openPopup);
   });
 }
 

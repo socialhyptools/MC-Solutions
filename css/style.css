@@ -674,12 +674,15 @@ section { padding: var(--section-py) 0; }
   font-weight: 700;
   margin-top: 18px;
   position: relative; z-index:1;
-  opacity: 0;
-  transform: translateX(-8px);
-  transition: all var(--transition);
+  opacity: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: color var(--transition);
 }
-.svc-card:hover .svc-arrow { opacity:1; transform: translateX(0); }
-.svc-arrow svg { width:14px; height:14px; stroke:var(--primary); }
+.svc-arrow:hover { color: var(--primary-dark); }
+.svc-arrow svg { width:14px; height:14px; stroke:currentColor; }
 
 /* ============ STATS SECTION ============ */
 .stats-sec {
