@@ -213,6 +213,20 @@ function initPopup() {
   }
 }
 
+/* ---- Enquiry Buttons on Service Cards ---- */
+function initEnquiryButtons() {
+  document.querySelectorAll('.sf-body').forEach(body => {
+    const btn = document.createElement('button');
+    btn.className = 'sf-enquiry-btn';
+    btn.textContent = 'Enquire Now';
+    btn.addEventListener('click', () => {
+      const popup = document.getElementById('quotePopup');
+      if (popup) popup.classList.add('active');
+    });
+    body.appendChild(btn);
+  });
+}
+
 /* ---- Init All ---- */
 document.addEventListener('DOMContentLoaded', () => {
   initScrollProgress();
@@ -225,4 +239,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initSmoothScroll();
   initPopup();
+  initEnquiryButtons();
 });
