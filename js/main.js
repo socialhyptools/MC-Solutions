@@ -121,7 +121,7 @@ function initHeroCanvas() {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(0,150,136,${0.07 * (1 - d / LINK_DIST)})`;
+          ctx.strokeStyle = `rgba(180,140,20,${0.07 * (1 - d / LINK_DIST)})`;
           ctx.lineWidth = 0.8;
           ctx.stroke();
         }
@@ -131,7 +131,7 @@ function initHeroCanvas() {
     particles.forEach(p => {
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(0,200,180,${p.o})`;
+      ctx.fillStyle = `rgba(200,162,39,${p.o})`;
       ctx.fill();
       p.x += p.vx; p.y += p.vy;
       if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
@@ -207,7 +207,7 @@ function initPopup() {
       e.preventDefault();
       const btn = form.querySelector('.form-sub');
       btn.textContent = "Thank you! We'll reach out soon.";
-      btn.style.background = 'linear-gradient(135deg,#009688,#00796B)';
+      btn.style.background = 'linear-gradient(135deg,#C9A227,#9A7A12)';
       setTimeout(closePopup, 2400);
     });
   }
