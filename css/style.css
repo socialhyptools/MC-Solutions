@@ -1168,8 +1168,7 @@ section { padding: var(--section-py) 0; }
   transform:translateY(-10px);
 }
 .sf-top {
-  height:180px;
-  display:flex; align-items:center; justify-content:center;
+  height:200px;
   position:relative;
   background:var(--bg-light);
   overflow:hidden;
@@ -1177,19 +1176,22 @@ section { padding: var(--section-py) 0; }
 .sf-top::before {
   content:'';
   position:absolute; inset:0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Ccircle cx='15' cy='15' r='1' fill='%23009688' opacity='0.12'/%3E%3C/svg%3E") center/30px 30px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Ccircle cx='15' cy='15' r='1' fill='%23C9A227' opacity='0.12'/%3E%3C/svg%3E") center/30px 30px;
 }
 .sf-top-icon {
-  width:80px; height:80px;
+  position:absolute;
+  bottom:14px;
+  left:14px;
+  z-index:3;
+  width:52px; height:52px;
   background:white;
-  border-radius:var(--radius-md);
+  border-radius:var(--radius-sm);
   display:flex; align-items:center; justify-content:center;
-  box-shadow:0 8px 30px rgba(180,140,20,0.15);
-  position:relative; z-index:1;
+  box-shadow:0 4px 20px rgba(0,0,0,0.3);
   transition:all var(--transition);
 }
-.sf-card:hover .sf-top-icon { background:var(--primary); box-shadow:0 12px 40px rgba(180,140,20,0.4); }
-.sf-top-icon svg { width:40px; height:40px; stroke:var(--primary); transition:stroke var(--transition); }
+.sf-card:hover .sf-top-icon { background:var(--primary); box-shadow:0 8px 28px rgba(180,140,20,0.5); }
+.sf-top-icon svg { width:28px; height:28px; stroke:var(--primary); transition:stroke var(--transition); }
 .sf-card:hover .sf-top-icon svg { stroke:white; }
 .sf-body { padding:28px; }
 .sf-cat {
@@ -1447,7 +1449,6 @@ section { padding: var(--section-py) 0; }
 .svc-card:hover .svc-img { transform: scale(1.07); }
 
 /* ============ SERVICES PAGE CARD IMAGES ============ */
-.sf-top { position: relative; }
 .sf-top-img {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
@@ -1458,10 +1459,9 @@ section { padding: var(--section-py) 0; }
 .sf-card:hover .sf-top-img { transform: scale(1.07); }
 .sf-top-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.04), rgba(0,20,20,0.36));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.08), rgba(0,0,0,0.45));
   z-index: 1;
 }
-.sf-top-icon { z-index: 2; }
 
 /* ============ WHATSAPP FLOATING BUTTON ============ */
 .wa-float {
