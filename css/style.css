@@ -901,7 +901,7 @@ section { padding: var(--section-py) 0; }
 .foot-links { display:flex; flex-direction:column; gap:12px; }
 .foot-links a {
   font-size:0.88rem;
-  color:rgba(255,255,255,0.5);
+  color:rgba(255,255,255,0.75);
   transition:color var(--transition);
   display:flex; align-items:center; gap:8px;
 }
@@ -931,7 +931,7 @@ section { padding: var(--section-py) 0; }
   letter-spacing:0.08em; text-transform:uppercase;
 }
 .fci-val {
-  font-size:0.86rem; color:rgba(255,255,255,0.65);
+  font-size:0.86rem; color:rgba(255,255,255,0.85);
   margin-top:1px; line-height:1.5;
 }
 
@@ -1348,25 +1348,21 @@ section { padding: var(--section-py) 0; }
 
 /* ============ LOGO IMAGE ============ */
 .nav-logo-img {
-  height: 100px;
+  height: 90px;
   width: auto;
   display: block;
-  background: white;
-  border-radius: 10px;
-  padding: 6px 14px;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,0.35));
 }
 .footer-logo {
   display: block;
   margin-bottom: 20px;
 }
 .footer-logo-img {
-  height: 68px;
+  height: 72px;
   width: auto;
   display: block;
-  background: white;
-  border-radius: 8px;
-  padding: 6px 12px;
   margin-bottom: 2px;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
 }
 
 /* ============ HERO — LEFT SPLIT LAYOUT ============ */
